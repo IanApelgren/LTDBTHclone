@@ -221,9 +221,8 @@ public class register extends javax.swing.JFrame {
             
             if (operations.createAccount(fname,lname,email,usname,psword,this))
             {
-                JOptionPane.showMessageDialog(this, "account created successfully");
+                JOptionPane.showMessageDialog(this, "Account Created Successfully!");
             }
-            
         }
         catch (Exception e)
         {

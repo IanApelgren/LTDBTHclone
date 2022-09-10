@@ -15,11 +15,21 @@ public class Operations {
         try {
             Connection myConn = MySQLConnection.getConnection();
             String mysqlQuery = 
-                    "INSERT INTO login (Fname,Lname,Email,Username,Password) VALUES (fname,lname,email,uname,pword)";
+                    "INSERT INTO userlogins.login (Fname,Lname,Email,Username,Password) VALUES (?,?,?,?,?);";
+            PreparedStatement ps = myConn.prepareStatement(mysqlQuery);
+            ps.setString(1, fname);
+            ps.setString(2, lname);
+            ps.setString(3, email);
+            ps.setString(4, uname);
+            ps.setString(5, pword);
+            ps.executeUpdate();
+            myConn.close();
+            return true;
             
         }
         catch (Exception e){
             JOptionPane.showMessageDialog(frame, "DB Error" + e.getMessage());
+            e.printStackTrace();
         }
         return false;
     }

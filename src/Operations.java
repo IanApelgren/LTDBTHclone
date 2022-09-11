@@ -33,4 +33,28 @@ public class Operations {
         }
         return false;
     }
+    
+    public static boolean isLogin(String uname, String pword, JFrame frame) {
+    	try {
+            Connection myConn = MySQLConnection.getConnection();
+            String mysqlQuery = 
+                    "SELECT * FROM userlogins.login WHERE Username = ? and Password = ?";
+            
+            PreparedStatement ps = myConn.prepareStatement(mysqlQuery);
+            ps.setString(1, uname);
+            ps.setString(2, pword);
+
+            ResultSet rs = ps.executeQuery();
+            if(rs.next()) {
+            	return true;
+            }
+            myConn.close();
+            
+        }
+        catch (Exception e){
+            JOptionPane.showMessageDialog(frame, "DB Error" + e.getMessage());
+            e.printStackTrace();
+        }
+    	return false;
+    }
 }

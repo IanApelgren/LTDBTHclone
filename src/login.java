@@ -4,6 +4,8 @@
  */
 package com.mycompany.gui;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author jamescooke
@@ -172,7 +174,26 @@ public class login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
-        // TODO add your handling code here:
+    	Operations operations = new Operations();
+        
+        try {
+            String uname = jTextField1.getText();
+            String pass = jTextField2.getText();
+            
+            
+            
+            if (operations.isLogin(uname,pass,this))
+            {
+                JOptionPane.showMessageDialog(this, "Login Successfull!");
+            }
+            else {
+            	JOptionPane.showMessageDialog(this, "Login Failed. Please Register!");
+            }
+        }
+        catch (Exception e)
+        {
+            JOptionPane.showMessageDialog(this, "Account not recognized. Please Register!");
+        }
     }//GEN-LAST:event_loginActionPerformed
 
     private void LSregisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LSregisterActionPerformed

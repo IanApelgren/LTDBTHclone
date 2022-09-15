@@ -54,7 +54,7 @@ public class mainSplash extends javax.swing.JFrame {
 
         systemTools.setText("System Tools");
 
-        recs.setText("Recommendations");
+        recs.setText("Useful Links");
         recs.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 recsActionPerformed(evt);
@@ -130,8 +130,9 @@ public class mainSplash extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void recsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recsActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_recsActionPerformed
+        new Reccomendations().setVisible(true);
+        this.dispose();
+    }
 
     private void logoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutActionPerformed
         // TODO add your handling code here:

@@ -188,7 +188,14 @@ public class login extends javax.swing.JFrame {
                 this.dispose();
             }
             else {
-            	JOptionPane.showMessageDialog(this, "Login Failed. Please Register!");
+            	if(operations.isUsername(uname,this))
+                {
+                	JOptionPane.showMessageDialog(this, "Password incorrect.");
+                }
+            	else
+            	{
+            		JOptionPane.showMessageDialog(this, "Login Failed. Please Register!");
+            	}
             }
         }
         catch (Exception e)

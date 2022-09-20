@@ -4,7 +4,7 @@
  */
 package com.mycompany.gui;
 import java.sql.*;
-import javax.swing.JOptionPane;
+
 import javax.swing.*;
 /**
  *
@@ -43,6 +43,29 @@ public class Operations {
             PreparedStatement ps = myConn.prepareStatement(mysqlQuery);
             ps.setString(1, uname);
             ps.setString(2, pword);
+
+            ResultSet rs = ps.executeQuery();
+            if(rs.next()) {
+            	return true;
+            }
+            myConn.close();
+            
+        }
+        catch (Exception e){
+            JOptionPane.showMessageDialog(frame, "DB Error" + e.getMessage());
+            e.printStackTrace();
+        }
+    	return false;
+    }
+    public static boolean isUsername(String uname, JFrame frame) {
+    	try {
+            Connection myConn = MySQLConnection.getConnection();
+            String mysqlQuery = 
+                    "SELECT * FROM userlogins.login WHERE Username = ?";
+            
+            PreparedStatement ps = myConn.prepareStatement(mysqlQuery);
+            ps.setString(1, uname);
+            
 
             ResultSet rs = ps.executeQuery();
             if(rs.next()) {

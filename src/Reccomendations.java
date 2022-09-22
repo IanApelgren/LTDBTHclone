@@ -94,6 +94,14 @@ public class Reccomendations extends javax.swing.JFrame {
         });
 
         NISTbutton.setText("National Institute Of Standards & Technology");
+        NISTbutton.addMouseListener(new java.awt.event.MouseAdapter() {
+        	public void mouseEntered(java.awt.event.MouseEvent evt) {
+        		jTextPane2.setVisible(false);
+        	}
+        	public void mouseExited(java.awt.event.MouseEvent evt) {
+        		jTextPane2.setVisible(true);
+        	}
+        });
         NISTbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 try {
@@ -157,7 +165,7 @@ public class Reccomendations extends javax.swing.JFrame {
 
         jTextPane1.setEditable(false);
         jTextPane1.setBackground(new java.awt.Color(0, 153, 255));
-        jTextPane1.setText("CISA is a government agency that leads the national effort to understand, manage, and reduce risk to\\n our cyber and physical infrasture. Click the button to be brought to a list of the most recent cybersecurity vulrabilities.");
+        jTextPane1.setText("CISA is a government agency that leads the national effort to understand, manage, and reduce risk to our cyber and physical infrasture. Click the button to be brought to a list of the most recent cybersecurity vulrabilities.");
         jScrollPane1.setViewportView(jTextPane1);
 
         jTextPane2.setEditable(false);
@@ -260,17 +268,17 @@ public class Reccomendations extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_gobackButtonActionPerformed
 
-    private void CIObuttonActionPerformed(java.awt.event.ActionEvent evt) throws URISyntaxException, IOException {//GEN-FIRST:event_CIObuttonActionPerformed
+    private void CIObuttonActionPerformed(java.awt.event.ActionEvent evt) throws URISyntaxException, IOException {
     	String website = "https://cio-wiki.org/wiki/Cyber_Security";
     	URI uriBase = new URI(website);
         java.awt.Desktop.getDesktop().browse(uriBase);
-    }//GEN-LAST:event_CIObuttonActionPerformed
+    }
 
-    private void NISTbuttonActionPerformed(java.awt.event.ActionEvent evt) throws URISyntaxException, IOException {//GEN-FIRST:event_NISTbuttonActionPerformed
+    private void NISTbuttonActionPerformed(java.awt.event.ActionEvent evt) throws URISyntaxException, IOException {
     	String website = "https://nvd.nist.gov/general/nvd-dashboard";
     	URI uriBase = new URI(website);
         java.awt.Desktop.getDesktop().browse(uriBase);
-    }//GEN-LAST:event_NISTbuttonActionPerformed
+    }
 
     /**
      * @param args the command line arguments

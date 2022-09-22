@@ -51,9 +51,17 @@ public class mainSplash extends javax.swing.JFrame {
         jLabel3.setText("Please select a category");
 
         networkTools.setText("Network Tools");
-
+        networkTools.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                networkToolsActionPerformed(evt);
+            }
+        });
         systemTools.setText("System Tools");
-
+        systemTools.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                systemToolsActionPerformed(evt);
+            }
+        });
         recs.setText("Useful Links");
         recs.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,6 +137,14 @@ public class mainSplash extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void networkToolsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recsActionPerformed
+        new Reccomendations().setVisible(true);
+        this.dispose();
+    }
+    private void systemToolsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recsActionPerformed
+        new SystemToolsPage().setVisible(true);
+        this.dispose();
+    }
     private void recsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recsActionPerformed
         new Reccomendations().setVisible(true);
         this.dispose();

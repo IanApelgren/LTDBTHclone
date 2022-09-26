@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.mycompany.gui;
+package com.ltdbth.gui;
 
 /**
  *
@@ -177,28 +177,28 @@ public class SystemToolsPage extends javax.swing.JFrame {
             }
         });
 
-        jButtonSecondLeft.setText("jButton1");
+        jButtonSecondLeft.setText("Malwarebytes");
         jButtonSecondLeft.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonSecondLeftActionPerformed(evt);
             }
         });
 
-        jButtonThirdLeft.setText("jButton1");
+        jButtonThirdLeft.setText("VirusTotal");
         jButtonThirdLeft.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonThirdLeftActionPerformed(evt);
             }
         });
 
-        jButtonFourthLeft.setText("jButton1");
+        jButtonFourthLeft.setText("CCleaner");
         jButtonFourthLeft.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonFourthLeftActionPerformed(evt);
             }
         });
 
-        jButtonFifthLeft.setText("jButton1");
+        jButtonFifthLeft.setText("Task Manager");
         jButtonFifthLeft.setMaximumSize(new java.awt.Dimension(50, 22));
         jButtonFifthLeft.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -206,7 +206,7 @@ public class SystemToolsPage extends javax.swing.JFrame {
             }
         });
 
-        jButtonSixthLeft.setText("jButton1");
+        jButtonSixthLeft.setText("Secure Password Generator");
         jButtonSixthLeft.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonSixthLeftActionPerformed(evt);

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.mycompany.gui;
+package com.ltdbth.gui;
 
 import java.io.IOException;
 import java.net.URI;
@@ -94,14 +94,16 @@ public class Reccomendations extends javax.swing.JFrame {
         });
 
         NISTbutton.setText("National Institute Of Standards & Technology");
-        NISTbutton.addMouseListener(new java.awt.event.MouseAdapter() {
-        	public void mouseEntered(java.awt.event.MouseEvent evt) {
-        		jTextPane2.setVisible(false);
-        	}
-        	public void mouseExited(java.awt.event.MouseEvent evt) {
-        		jTextPane2.setVisible(true);
-        	}
-        });
+        
+//        NISTbutton.addMouseListener(new java.awt.event.MouseAdapter() {
+//        	public void mouseEntered(java.awt.event.MouseEvent evt) {
+//        		jTextPane2.setVisible(false);
+//        	}
+//        	public void mouseExited(java.awt.event.MouseEvent evt) {
+//        		jTextPane2.setVisible(true);
+//        	}
+//        });
+        
         NISTbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 try {

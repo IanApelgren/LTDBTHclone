@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.mycompany.gui;
+package com.ltdbth.gui;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -39,7 +39,6 @@ public class ipConfigPage extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         RunButton = new javax.swing.JButton();
-        InstallButton = new javax.swing.JButton();
         BackButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         DscriptionTextArea = new javax.swing.JTextArea();
@@ -65,13 +64,6 @@ public class ipConfigPage extends javax.swing.JFrame {
             }
         });
 
-        InstallButton.setText("Install");
-        InstallButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                InstallButtonActionPerformed(evt);
-            }
-        });
-
         BackButton.setText("Back");
         BackButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,7 +79,7 @@ public class ipConfigPage extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(BackButton, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 125, Short.MAX_VALUE)
-                .addComponent(InstallButton, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                
                 .addGap(126, 126, 126)
                 .addComponent(RunButton, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -99,7 +91,7 @@ public class ipConfigPage extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(BackButton, javax.swing.GroupLayout.DEFAULT_SIZE, 72, Short.MAX_VALUE)
                     .addComponent(RunButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(InstallButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    )
                 .addContainerGap())
         );
 
@@ -107,7 +99,7 @@ public class ipConfigPage extends javax.swing.JFrame {
         DscriptionTextArea.setColumns(20);
         DscriptionTextArea.setLineWrap(true);
         DscriptionTextArea.setRows(20);
-        DscriptionTextArea.setText("Oputput will go here");
+        DscriptionTextArea.setText("Output will go here");
         DscriptionTextArea.setWrapStyleWord(true);
         DscriptionTextArea.setAutoscrolls(false);
         DscriptionTextArea.setBorder(null);
@@ -118,9 +110,7 @@ public class ipConfigPage extends javax.swing.JFrame {
         nameLabel.setFont(new java.awt.Font("Georgia", 1, 36)); // NOI18N
         nameLabel.setText("ipconfig");
 
-        PictureLabel1.setText("ipconfig is a simple but useful tool for finding out you systems ip information");
-
-        PictureLabel2.setText("jLabel1");
+        PictureLabel1.setText("ipconfig is a simple but useful tool for finding out your systems network infomation.");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -238,7 +228,6 @@ public class ipConfigPage extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BackButton;
     private javax.swing.JTextArea DscriptionTextArea;
-    private javax.swing.JButton InstallButton;
     private javax.swing.JLabel PictureLabel1;
     private javax.swing.JLabel PictureLabel2;
     private javax.swing.JButton RunButton;

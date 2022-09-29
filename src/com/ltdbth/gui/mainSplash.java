@@ -138,7 +138,7 @@ public class mainSplash extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void networkToolsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recsActionPerformed
-        new Reccomendations().setVisible(true);
+        new NetworkToolsPage().setVisible(true);
         this.dispose();
     }
     private void systemToolsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recsActionPerformed

@@ -1,5 +1,5 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
@@ -48,9 +48,9 @@ public class ipConfigPage extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 255));
+        jPanel1.setBackground(new java.awt.Color(102, 204, 255));
 
-        jPanel3.setBackground(new java.awt.Color(0, 153, 255));
+        jPanel3.setBackground(new java.awt.Color(102, 204, 255));
 
         RunButton.setText("Launch");
         RunButton.addActionListener(new java.awt.event.ActionListener() {
@@ -95,7 +95,7 @@ public class ipConfigPage extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        DscriptionTextArea.setBackground(new java.awt.Color(0, 153, 255));
+        DscriptionTextArea.setBackground(new java.awt.Color(102, 204, 255));
         DscriptionTextArea.setColumns(20);
         DscriptionTextArea.setLineWrap(true);
         DscriptionTextArea.setRows(20);

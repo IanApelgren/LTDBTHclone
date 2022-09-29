@@ -54,9 +54,9 @@ public class Reccomendations extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 255));
+        jPanel1.setBackground(new java.awt.Color(102, 204, 255));
 
-        jPanel2.setBackground(new java.awt.Color(0, 153, 255));
+        jPanel2.setBackground(new java.awt.Color(102, 204, 255));
 
         jLabel1.setBackground(new java.awt.Color(0, 153, 204));
         jLabel1.setFont(new java.awt.Font("Georgia", 1, 36)); // NOI18N
@@ -79,7 +79,7 @@ public class Reccomendations extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel3.setBackground(new java.awt.Color(0, 153, 255));
+        jPanel3.setBackground(new java.awt.Color(102, 204, 255));
 
         CISAbutton.setText("Cybersecurity & Infrastructure Security Agency");
         CISAbutton.addActionListener(new java.awt.event.ActionListener() {
@@ -166,24 +166,24 @@ public class Reccomendations extends javax.swing.JFrame {
         );
 
         jTextPane1.setEditable(false);
-        jTextPane1.setBackground(new java.awt.Color(0, 153, 255));
+        jTextPane1.setBackground(new java.awt.Color(102, 204, 255));
         jTextPane1.setText("CISA is a government agency that leads the national effort to understand, manage, and reduce risk to our cyber and physical infrasture. Click the button to be brought to a list of the most recent cybersecurity vulrabilities.");
         jScrollPane1.setViewportView(jTextPane1);
 
         jTextPane2.setEditable(false);
-        jTextPane2.setBackground(new java.awt.Color(0, 153, 255));
+        jTextPane2.setBackground(new java.awt.Color(102, 204, 255));
         jTextPane2.setText("NIST provides a dashboard showcasing common vulnrablity exploits (CVEs) and their status as well as severity. Click the button to see the most recent CVEs on their website.");
         jTextPane2.setToolTipText("");
         jScrollPane2.setViewportView(jTextPane2);
 
         jTextPane3.setEditable(false);
-        jTextPane3.setBackground(new java.awt.Color(0, 153, 255));
+        jTextPane3.setBackground(new java.awt.Color(102, 204, 255));
         jTextPane3.setText("CioWiki provides an encyclopedia regarding IT management. This entry provides general information about cybersecurity and types of threats/attacks.");
         jTextPane3.setToolTipText("");
         jScrollPane3.setViewportView(jTextPane3);
 
         jTextPane4.setEditable(false);
-        jTextPane4.setBackground(new java.awt.Color(0, 153, 255));
+        jTextPane4.setBackground(new java.awt.Color(102, 204, 255));
         jTextPane4.setText("The FTC provides introductory cybersecurity infromation for small buisnesses. Click the button to learn about how to protect your buisness and take a quiz.");
         jTextPane4.setToolTipText("");
         jScrollPane4.setViewportView(jTextPane4);

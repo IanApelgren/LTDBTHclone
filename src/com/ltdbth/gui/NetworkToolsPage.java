@@ -202,13 +202,13 @@ public class NetworkToolsPage extends javax.swing.JFrame {
     }                                           
 
     private void RouterButtonActionPerformed(java.awt.event.ActionEvent evt) {
-    	new RouterSettings().setVisible(true);
+    	//new RouterSettings().setVisible(true);
     	this.dispose();
     }                                            
 
     private void WireSharkButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                
         // TODO add your handling code here:
-    	new Wireshark().setVisible(true);
+    	//new Wireshark().setVisible(true);
     	this.dispose();
     }                                               
 

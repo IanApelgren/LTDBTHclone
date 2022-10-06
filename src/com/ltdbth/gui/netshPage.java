@@ -197,7 +197,7 @@ public class netshPage extends javax.swing.JFrame {
         // TODO add your handling code here:
     	Runtime rt = Runtime.getRuntime();
     	try {
-			Process pr = rt.exec("cmd.exe netsh /c start");
+			Process pr = rt.exec("cmd.exe /c start netsh");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -213,7 +213,6 @@ public class netshPage extends javax.swing.JFrame {
     	Process p = Runtime.getRuntime().exec("netsh ?");
     	
     	BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
-    	BufferedReader stdError = new BufferedReader(new InputStreamReader(p.getErrorStream()));
     	
     	StringJoiner joiner = new StringJoiner("\n");
     	String line = null;

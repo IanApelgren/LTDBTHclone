@@ -1,7 +1,3 @@
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
-
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -12,12 +8,12 @@ import java.net.URISyntaxException;
  *
  * @author James
  */
-public class VirusTotal_1 extends javax.swing.JFrame {
+public class RouterSettings extends javax.swing.JFrame {
 
     /**
      * Creates new form MalwareBytes
      */
-    public VirusTotal_1() {
+    public RouterSettings() {
         initComponents();
     }
 
@@ -65,6 +61,8 @@ public class VirusTotal_1 extends javax.swing.JFrame {
             .addGap(0, 486, Short.MAX_VALUE)
         );
 
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("MalwareBytes");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -75,7 +73,7 @@ public class VirusTotal_1 extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("VirusTotal");
+        jLabel2.setText("Router Settings");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -91,7 +89,7 @@ public class VirusTotal_1 extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(102, 204, 255));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("VirusTotal is a website created by the Spanish security company Hispasec Sistemas. Launched in June 2004, it was acquired by Google in September 2012.");
+        jLabel3.setText("Use the launch button to open a portal to your routers settings. Upon sign in you can change SSID, password and other things.");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -120,15 +118,7 @@ public class VirusTotal_1 extends javax.swing.JFrame {
         jButton3.setText("Launch");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                try {
-					jButton3ActionPerformed(evt);
-				} catch (URISyntaxException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+                jButton3ActionPerformed(evt);
             }
         });
 
@@ -173,14 +163,12 @@ public class VirusTotal_1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        new SystemToolsPage().setVisible(true);
+        new NetworkToolsPage().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) throws URISyntaxException, IOException {//GEN-FIRST:event_jButton3ActionPerformed
-       String website = "https://www.virustotal.com/gui/home/upload";
-       URI uriBase = new URI(website);
-       java.awt.Desktop.getDesktop().browse(uriBase);
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
@@ -200,13 +188,13 @@ public class VirusTotal_1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VirusTotal_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(RouterSettings.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VirusTotal_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(RouterSettings.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VirusTotal_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(RouterSettings.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VirusTotal_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(RouterSettings.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -216,7 +204,7 @@ public class VirusTotal_1 extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new VirusTotal_1().setVisible(true);
+                new RouterSettings().setVisible(true);
             }
         });
     }

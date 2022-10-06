@@ -12,12 +12,12 @@ import java.net.URISyntaxException;
  *
  * @author James
  */
-public class VirusTotal_1 extends javax.swing.JFrame {
+public class SpeedTest extends javax.swing.JFrame {
 
     /**
      * Creates new form MalwareBytes
      */
-    public VirusTotal_1() {
+    public SpeedTest() {
         initComponents();
     }
 
@@ -75,7 +75,7 @@ public class VirusTotal_1 extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("VirusTotal");
+        jLabel2.setText("Internet Speed Test");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -91,7 +91,7 @@ public class VirusTotal_1 extends javax.swing.JFrame {
         jPanel5.setBackground(new java.awt.Color(102, 204, 255));
 
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("VirusTotal is a website created by the Spanish security company Hispasec Sistemas. Launched in June 2004, it was acquired by Google in September 2012.");
+        jLabel3.setText("Analyze your networks download and upload speed and compare with the speeds you are paying for.");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -173,12 +173,12 @@ public class VirusTotal_1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        new SystemToolsPage().setVisible(true);
+        new NetworkToolsPage().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) throws URISyntaxException, IOException {//GEN-FIRST:event_jButton3ActionPerformed
-       String website = "https://www.virustotal.com/gui/home/upload";
+       String website = "https://fast.com/";
        URI uriBase = new URI(website);
        java.awt.Desktop.getDesktop().browse(uriBase);
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -200,13 +200,13 @@ public class VirusTotal_1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VirusTotal_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SpeedTest.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VirusTotal_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SpeedTest.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VirusTotal_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SpeedTest.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VirusTotal_1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SpeedTest.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -216,7 +216,7 @@ public class VirusTotal_1 extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new VirusTotal_1().setVisible(true);
+                new SpeedTest().setVisible(true);
             }
         });
     }

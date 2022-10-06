@@ -191,7 +191,8 @@ public class NetworkToolsPage extends javax.swing.JFrame {
     }// </editor-fold>                        
 
     private void speedTestButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                
-        // TODO add your handling code here:
+        new SpeedTest().setVisible(true);
+        this.dispose();
     }                                               
 
     private void netshButtonActionPerformed(java.awt.event.ActionEvent evt) {                                            
@@ -200,20 +201,25 @@ public class NetworkToolsPage extends javax.swing.JFrame {
     	this.dispose();
     }                                           
 
-    private void RouterButtonActionPerformed(java.awt.event.ActionEvent evt) {                                             
-        // TODO add your handling code here:
+    private void RouterButtonActionPerformed(java.awt.event.ActionEvent evt) {
+    	new RouterSettings().setVisible(true);
+    	this.dispose();
     }                                            
 
     private void WireSharkButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                
         // TODO add your handling code here:
+    	new Wireshark().setVisible(true);
+    	this.dispose();
     }                                               
 
-    private void MACLookupButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                
-        // TODO add your handling code here:
+    private void MACLookupButtonActionPerformed(java.awt.event.ActionEvent evt) { 
+    	new MAC().setVisible(true);
+    	this.dispose();
     }                                               
 
-    private void VPNButtonActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        // TODO add your handling code here:
+    private void VPNButtonActionPerformed(java.awt.event.ActionEvent evt) {    
+    	new VPN().setVisible(true);
+    	this.dispose();
     }                                         
 
     private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {                                           

@@ -30,7 +30,7 @@ public class ipConfigPage extends javax.swing.JFrame {
      * places all of our components
      */
     @SuppressWarnings("unchecked")
-    
+   
     private void initComponents() {
     	String name = null;
     	
@@ -50,7 +50,9 @@ public class ipConfigPage extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(102, 204, 255));
 
         jPanel3.setBackground(new java.awt.Color(102, 204, 255));
-
+        
+        
+        //action listener for launch button
         RunButton.setText("Launch");
         RunButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -62,6 +64,7 @@ public class ipConfigPage extends javax.swing.JFrame {
             }
         });
 
+        //action listener for back button
         BackButton.setText("Back");
         BackButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -165,7 +168,6 @@ public class ipConfigPage extends javax.swing.JFrame {
     	Process p = Runtime.getRuntime().exec("ipconfig");
     	
     	BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
-    	BufferedReader stdError = new BufferedReader(new InputStreamReader(p.getErrorStream()));
     	
     	StringJoiner joiner = new StringJoiner("\n");
     	String line = null;
@@ -179,11 +181,12 @@ public class ipConfigPage extends javax.swing.JFrame {
     	
     	
 	}
-    //legacy, no
+    //legacy button has been removed
     public void InstallButtonActionPerformed(java.awt.event.ActionEvent evt) {
     	JOptionPane.showMessageDialog(this, "ipconfig uses cmd which is native to windows.");
 	}
 
+    //action event for back button
     private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {
     	new SystemToolsPage().setVisible(true);
     	this.dispose();
@@ -194,10 +197,6 @@ public class ipConfigPage extends javax.swing.JFrame {
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -214,7 +213,7 @@ public class ipConfigPage extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(ipConfigPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -224,7 +223,7 @@ public class ipConfigPage extends javax.swing.JFrame {
         
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration 
     private javax.swing.JButton BackButton;
     private javax.swing.JTextArea DscriptionTextArea;
     private javax.swing.JLabel PictureLabel1;
@@ -234,5 +233,5 @@ public class ipConfigPage extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel nameLabel;
-    // End of variables declaration//GEN-END:variables
+    
 }

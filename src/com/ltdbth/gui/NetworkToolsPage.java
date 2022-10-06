@@ -218,7 +218,7 @@ public class NetworkToolsPage extends javax.swing.JFrame {
     }                                               
 
     private void VPNButtonActionPerformed(java.awt.event.ActionEvent evt) {    
-    	new VPN().setVisible(true);
+    	new VPN2().setVisible(true);
     	this.dispose();
     }                                         
 

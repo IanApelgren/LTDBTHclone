@@ -1,12 +1,12 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
+ * @author Ian Apelgren
+ * @author James Cooke
+ * MySQLConnection houses all the methods we need to connect and query our local SQL server
  */
 
 import java.sql.*;
 /**
- *
- * @author jamescooke
+ * houses data to connect and login to our server
  */
 public class MySQLConnection {
 
@@ -19,7 +19,7 @@ public class MySQLConnection {
             String hostUsername = "root";
             String hostPassword = "Appstate123";
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection myConn = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/", "root","Appstate123");
+            Connection myConn = (Connection)DriverManager.getConnection("jdbc:mysql://localhost:3306/", "root", "Appstate123");
             
             return myConn;
             

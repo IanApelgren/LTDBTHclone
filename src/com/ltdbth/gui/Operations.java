@@ -1,6 +1,7 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
+ * @author Ian Apelgren
+ * @author James Cooke
+ * opperations houses all the user specific queries and inserts we would do
  */
 
 import java.sql.*;
@@ -8,9 +9,10 @@ import java.sql.*;
 import javax.swing.*;
 /**
  *
- * @author jamescooke
+ * houses all opperations
  */
 public class Operations {
+	//create account inserts values into server making a new account
     public static boolean createAccount(String fname, String lname, String email, String uname, String pword, JFrame frame) {
         try {
             Connection myConn = MySQLConnection.getConnection();
@@ -34,6 +36,7 @@ public class Operations {
         return false;
     }
     
+    //isLogin checks to see if the login info is valid
     public static boolean isLogin(String uname, String pword, JFrame frame) {
     	try {
             Connection myConn = MySQLConnection.getConnection();
@@ -57,6 +60,7 @@ public class Operations {
         }
     	return false;
     }
+    //isUsername checks exclusivly username for more detailed error feedback
     public static boolean isUsername(String uname, JFrame frame) {
     	try {
             Connection myConn = MySQLConnection.getConnection();

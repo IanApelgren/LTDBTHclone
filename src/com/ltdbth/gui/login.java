@@ -7,6 +7,7 @@
 
 
 import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
 
 /**
  *
@@ -34,7 +35,7 @@ public class login extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JPasswordField();
         login = new javax.swing.JButton();
         LSregister = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
@@ -182,7 +183,8 @@ public class login extends javax.swing.JFrame {
         
         try {
             String uname = jTextField1.getText();
-            String pass = jTextField2.getText();
+            String pass = new String(((JPasswordField) jTextField2).getPassword());
+            
             
             
             

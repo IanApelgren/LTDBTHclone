@@ -198,7 +198,8 @@ public class SystemToolsPage extends javax.swing.JFrame {
 
     //action event for secure password button
     private void SecurePasswordButtonActionPerformed(java.awt.event.ActionEvent evt) {                                                     
-       
+       new PasswordGen().setVisible(true);
+       this.dispose();
     }                                                    
 
     //action event for ipconfig button

@@ -39,8 +39,8 @@ public class register extends javax.swing.JFrame {
         lnametext = new javax.swing.JTextField();
         unametext = new javax.swing.JTextField();
         emailtext = new javax.swing.JTextField();
-        pwordtext = new javax.swing.JTextField();
-        confirmpwordtext = new javax.swing.JTextField();
+        pwordtext = new javax.swing.JPasswordField();
+        confirmpwordtext = new javax.swing.JPasswordField();
         RegisterButtonACscreen = new javax.swing.JButton();
         GoBackButtonACscreen = new javax.swing.JButton();
 
@@ -208,8 +208,8 @@ public class register extends javax.swing.JFrame {
             String lname = lnametext.getText();
             String usname = unametext.getText();
             String email = emailtext.getText();
-            String psword = pwordtext.getText();
-            String confirmpsword = confirmpwordtext.getText();
+            String psword = new String(((JPasswordField) pwordtext).getPassword());
+            String confirmpsword = new String(((JPasswordField) confirmpwordtext).getPassword());
             
             if (!psword.equals(confirmpsword))
             {

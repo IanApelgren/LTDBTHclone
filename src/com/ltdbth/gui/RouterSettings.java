@@ -1,6 +1,9 @@
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.StringJoiner;
 
 /*
  * @author Ian Apelgren
@@ -180,12 +183,49 @@ public class RouterSettings extends javax.swing.JFrame {
     }
 
     //action event for launch button
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) throws IOException, URISyntaxException {
-    	String website = "https://www.fast.com";
-        URI uriBase = new URI(website);
-        java.awt.Desktop.getDesktop().browse(uriBase);
+ 
+	private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) throws IOException, URISyntaxException {
+    	
+    	char c;
+    	String s = "";
+    	Process p = Runtime.getRuntime().exec("ipconfig");
+    	
+    	BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
+    	
+    	StringJoiner joiner = new StringJoiner("\n");
+    	String line = null;
+    	
+    	while ((line = stdInput.readLine()) != null) 
+    	{
+    		if(line.contains("   Default Gateway") == true) 
+    		{
+    			//System.out.println(line.charAt(counter+1));
+    			
+    			for (int i = 0; i != 14; i++)
+    			{
+    				c = line.charAt(i+39);
+
+    				//System.out.println(c);
+    				s = s + c;
+    				//System.out.println(s);
+    			
+    				
+    			}
+    			toWebsite(s);
+    			break;
+    		}
+    		joiner.add(line);
+    		
+    	}
+    	
     }
 
+	public void toWebsite(String s) throws URISyntaxException, IOException
+	{
+		String website = "https://" +s;
+        URI uriBase = new URI( website);
+        java.awt.Desktop.getDesktop().browse(uriBase);
+	}
     /**
      * @param args the command line arguments
      */

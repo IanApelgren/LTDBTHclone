@@ -195,22 +195,21 @@ public class RouterSettings extends javax.swing.JFrame {
     	StringJoiner joiner = new StringJoiner("\n");
     	String line = null;
     	
+    	//iterates through ipconfig. looks for default gateway. router IP is always displayed first
     	while ((line = stdInput.readLine()) != null) 
     	{
+    		//if we find default gateway gets the ip from it
     		if(line.contains("   Default Gateway") == true) 
     		{
     			//System.out.println(line.charAt(counter+1));
-    			
-    			for (int i = 0; i != 14; i++)
+    			for (int i = 0; i != 15; i++)
     			{
     				c = line.charAt(i+39);
-
     				//System.out.println(c);
     				s = s + c;
-    				//System.out.println(s);
-    			
-    				
+    				//System.out.println(s);	
     			}
+    			//prepares ip to be lauched in browser
     			toWebsite(s);
     			break;
     		}
@@ -220,6 +219,13 @@ public class RouterSettings extends javax.swing.JFrame {
     	
     }
 
+	/**
+	 * 
+	 * @param s string
+	 * @throws URISyntaxException
+	 * @throws IOException
+	 * takes string s and prepares it to be launched then launches it in browser
+	 */
 	public void toWebsite(String s) throws URISyntaxException, IOException
 	{
 		String website = "https://" +s;

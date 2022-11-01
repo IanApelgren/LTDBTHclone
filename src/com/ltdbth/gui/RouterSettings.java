@@ -201,13 +201,10 @@ public class RouterSettings extends javax.swing.JFrame {
     		//if we find default gateway gets the ip from it
     		if(line.contains("   Default Gateway") == true) 
     		{
-    			//System.out.println(line.charAt(counter+1));
-    			for (int i = 0; i != 15; i++)
-    			{
-    				c = line.charAt(i+39);
-    				//System.out.println(c);
-    				s = s + c;
-    				//System.out.println(s);	
+    			for (int i = 0; i != line.length() - 39; i++)
+    			{		
+    					c = line.charAt(i+39);	
+    					s = s + c;
     			}
     			//prepares ip to be lauched in browser
     			toWebsite(s);
@@ -219,6 +216,7 @@ public class RouterSettings extends javax.swing.JFrame {
     	
     }
 
+	
 	/**
 	 * 
 	 * @param s string
@@ -228,10 +226,12 @@ public class RouterSettings extends javax.swing.JFrame {
 	 */
 	public void toWebsite(String s) throws URISyntaxException, IOException
 	{
-		String website = "https://" +s;
+		String website = "https://" + s;
         URI uriBase = new URI( website);
         java.awt.Desktop.getDesktop().browse(uriBase);
 	}
+	
+	
     /**
      * @param args the command line arguments
      */

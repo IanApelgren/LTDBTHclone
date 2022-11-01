@@ -227,8 +227,8 @@ public class RouterSettings extends javax.swing.JFrame {
 	public void toWebsite(String s) throws URISyntaxException, IOException
 	{
 		String website = "https://" + s;
-        URI uriBase = new URI( website);
-        java.awt.Desktop.getDesktop().browse(uriBase);
+		URI uriBase = new URI( website);
+		java.awt.Desktop.getDesktop().browse(uriBase);
 	}
 	
 	

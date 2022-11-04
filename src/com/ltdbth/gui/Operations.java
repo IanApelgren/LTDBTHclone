@@ -60,7 +60,7 @@ public class Operations {
         }
     	return false;
     }
-    //isUsername checks exclusivly username for more detailed error feedback
+    //isUsername checks exclusively username for more detailed error feedback
     public static boolean isUsername(String uname, JFrame frame) {
     	try {
             Connection myConn = MySQLConnection.getConnection();

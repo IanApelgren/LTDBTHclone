@@ -37,9 +37,9 @@ public class PasswordGen extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(804, 536));
 
-        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
+        jPanel1.setBackground(new java.awt.Color(102, 204, 255));
 
-        jPanel2.setBackground(new java.awt.Color(153, 204, 255));
+        jPanel2.setBackground(new java.awt.Color(102, 204, 255));
 
         jLabel1.setFont(new java.awt.Font("Kannada MN", 1, 30)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -56,7 +56,7 @@ public class PasswordGen extends javax.swing.JFrame {
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
         );
 
-        jPanel3.setBackground(new java.awt.Color(153, 204, 255));
+        jPanel3.setBackground(new java.awt.Color(102, 204, 255));
 
         specialCheck.setText("Special Characters");
         specialCheck.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -97,9 +97,9 @@ public class PasswordGen extends javax.swing.JFrame {
             }
         });
 
-        jPanel4.setBackground(new java.awt.Color(153, 204, 255));
+        jPanel4.setBackground(new java.awt.Color(102, 204, 255));
 
-        jTextField3.setBackground(new java.awt.Color(153, 204, 255));
+        jTextField3.setBackground(new java.awt.Color(102, 204, 255));
         jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField3.setText("Generate A Secure Password");
         jTextField3.addActionListener(new java.awt.event.ActionListener() {

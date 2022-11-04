@@ -2,6 +2,8 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+import javax.swing.JTextArea;
+
 /*
  * @author Ian Apelgren
  * @author James Cooke
@@ -32,12 +34,14 @@ public class VirusTotal_1 extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JTextArea();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        
 
         jPanel1.setPreferredSize(new java.awt.Dimension(800, 536));
-
+        setResizable(false);
+        
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -85,9 +89,18 @@ public class VirusTotal_1 extends javax.swing.JFrame {
 
         jPanel5.setBackground(new java.awt.Color(102, 204, 255));
 
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setBackground(new java.awt.Color(102, 204, 255));
+        jLabel3.setColumns(20);
+        jLabel3.setLineWrap(true);
+        jLabel3.setRows(20);
         jLabel3.setText("VirusTotal is a website created by the Spanish security company Hispasec Sistemas. Launched in June 2004, it was acquired by Google in September 2012.");
-
+        jLabel3.setWrapStyleWord(true);
+        jLabel3.setAutoscrolls(false);
+        jLabel3.setBorder(null);
+        jLabel3.setFocusable(false);
+        jLabel3.setOpaque(false);
+        jLabel3.setSize(800, 536);
+        
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -218,7 +231,7 @@ public class VirusTotal_1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private JTextArea jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

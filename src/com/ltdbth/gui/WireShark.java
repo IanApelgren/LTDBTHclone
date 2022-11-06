@@ -2,6 +2,8 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+import javax.swing.JTextArea;
+
 /*
  * @author Ian Apelgren 
  * @author James Cooke
@@ -32,7 +34,7 @@ public class WireShark extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -88,7 +90,16 @@ public class WireShark extends javax.swing.JFrame {
 
         jPanel5.setBackground(new java.awt.Color(102, 204, 255));
 
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setBackground(new java.awt.Color(102, 204, 255));
+        jLabel3.setColumns(20);
+        jLabel3.setLineWrap(true);
+        jLabel3.setRows(20);
+        jLabel3.setWrapStyleWord(true);
+        jLabel3.setAutoscrolls(false);
+        jLabel3.setBorder(null);
+        jLabel3.setFocusable(false);
+        jLabel3.setOpaque(false);
+        jLabel3.setSize(800, 536);
         jLabel3.setText("WireShark is a network traffic monitoring tool. See outgoing and incoming traffic to your network!");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -97,7 +108,7 @@ public class WireShark extends javax.swing.JFrame {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 788, Short.MAX_VALUE)
+                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
@@ -242,7 +253,7 @@ public class WireShark extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private JTextArea jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

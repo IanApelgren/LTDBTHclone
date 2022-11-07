@@ -38,6 +38,7 @@ public class VPN2 extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
+        setResizable(false);
         jPanel1.setPreferredSize(new java.awt.Dimension(800, 536));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

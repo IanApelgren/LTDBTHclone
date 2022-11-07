@@ -42,6 +42,7 @@ public class netshPage extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         DscriptionTextArea = new javax.swing.JTextArea();
 
+        setResizable(false);
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(102, 204, 255));

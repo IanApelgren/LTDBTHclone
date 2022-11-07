@@ -42,6 +42,7 @@ public class MAC extends javax.swing.JFrame {
         PictureLabel1 = new javax.swing.JTextArea();
         PictureLabel2 = new javax.swing.JLabel();
 
+        setResizable(false);
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(102, 204, 255));

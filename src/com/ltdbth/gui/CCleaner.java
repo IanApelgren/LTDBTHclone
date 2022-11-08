@@ -98,7 +98,10 @@ public class CCleaner extends javax.swing.JFrame {
         jLabel3.setColumns(20);
         jLabel3.setLineWrap(true);
         jLabel3.setRows(20);
-        jLabel3.setText("CCleaner, developed by Piriform, is a utility used to clean potentially unwanted files and invalid Windows Registry entries from a computer.");
+        jLabel3.setText("CCleaner, developed by Piriform, is a utility used to clean potentially unwanted files and "
+        		+ "invalid Windows Registry entries from a computer. CCleaner can remove gigabytes of data from a multitude of "
+        		+ "programs in the form of temporary files and cached browser data thus freeing up hard drive space and "
+        		+ "increasing system performance.");
         jLabel3.setWrapStyleWord(true);
         jLabel3.setAutoscrolls(false);
         jLabel3.setBorder(null);

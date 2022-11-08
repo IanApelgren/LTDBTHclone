@@ -120,7 +120,9 @@ public class ipConfigPage extends javax.swing.JFrame {
         DscriptionTextArea2.setColumns(20);
         DscriptionTextArea2.setLineWrap(true);
         DscriptionTextArea2.setRows(20);
-        DscriptionTextArea2.setText("description");
+        DscriptionTextArea2.setText("The IP Config tool will display useful infomation about your home network. "
+        		+ "IP Config shows all current TCP/IP network configurations and provides functionality to "
+        		+ "refresh both Dynamic Host Configuration and Domain Name System protocols.");
         DscriptionTextArea2.setWrapStyleWord(true);
         DscriptionTextArea2.setAutoscrolls(false);
         DscriptionTextArea2.setBorder(null);

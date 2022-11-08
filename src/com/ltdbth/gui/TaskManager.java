@@ -62,9 +62,6 @@ public class TaskManager extends javax.swing.JFrame {
             .addGap(0, 486, Short.MAX_VALUE)
         );
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("MalwareBytes");
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel3.setBackground(new java.awt.Color(102, 204, 255));
@@ -93,7 +90,11 @@ public class TaskManager extends javax.swing.JFrame {
         jLabel3.setColumns(20);
         jLabel3.setLineWrap(true);
         jLabel3.setRows(20);
-        jLabel3.setText("Task Manager, is a task manager, system monitor, and startup manager included with Microsoft Windows systems.");
+        jLabel3.setText("Task Manager is a built in application the comes with all versions of the Windows operating system. "
+        		+ "Task Manager can be used to monitor system resources, processes and dictate which processes run upon startup."
+        		+ " Minimizing which processes are launched upon start up can drastically increase start up time. "
+        		+ "Monitoring which processes are taking up the most resources is important for optimizing system performence "
+        		+ "and knowing which processes are expected is key to recognizing if you have fallen victim to malware.");
         jLabel3.setWrapStyleWord(true);
         jLabel3.setAutoscrolls(false);
         jLabel3.setBorder(null);

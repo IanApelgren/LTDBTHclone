@@ -118,7 +118,10 @@ public class MAC extends javax.swing.JFrame {
         PictureLabel1.setFocusable(false);
         PictureLabel1.setOpaque(false);
         PictureLabel1.setSize(300, 536);
-        PictureLabel1.setText("Find all devices connected to your network. Look up their the address to see type.");
+        PictureLabel1.setText("A MAC address is a unique number assigned to network control devices like a computer's "
+        		+ "wifi adapter and can be used to see exactly what is on your network. If you check this often you can "
+        		+ "get a feel for how many devices you have and will be able to notice if a device that shouldn't be there is. "
+        		+ "Use the lookup function to find the manufacturer of the device. ");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

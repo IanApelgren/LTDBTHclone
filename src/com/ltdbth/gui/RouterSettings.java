@@ -100,7 +100,12 @@ public class RouterSettings extends javax.swing.JFrame {
         jLabel3.setBorder(null);
         jLabel3.setFocusable(false);
         jLabel3.setOpaque(false);
-        jLabel3.setText("Analyze your router, change creditentials and open ports using your routers configuration page.");
+        jLabel3.setText("The router settings tool is designed to give you easy access to your network router. "
+        		+ "It's important that both your router and wifi login have strong passwords as your router is the best "
+        		+ "and often only line of defense preventing people from gaining access to your home network. Depending on "
+        		+ "your provider there are often a plethora of other features included on your router's page such as traffic logs "
+        		+ "and seeing devices connected to your network.\n"
+        		+ "");
         jLabel3.setSize(800, 536);
         
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);

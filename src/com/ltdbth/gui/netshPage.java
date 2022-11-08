@@ -38,7 +38,7 @@ public class netshPage extends javax.swing.JFrame {
         Launch = new javax.swing.JButton();
         HelpButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JTextArea();
+        description = new javax.swing.JTextArea();
         jScrollPane1 = new javax.swing.JScrollPane();
         DscriptionTextArea = new javax.swing.JTextArea();
 
@@ -125,14 +125,14 @@ public class netshPage extends javax.swing.JFrame {
         jLabel2.setText("Click the \"Launch\" button to bring up the netsh window. ");
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
-        jLabel3.setBackground(new java.awt.Color(102, 204, 255));
-        jLabel3.setLineWrap(true);
-        jLabel3.setWrapStyleWord(true);
-        jLabel3.setAutoscrolls(false);
-        jLabel3.setBorder(null);
-        jLabel3.setFocusable(false);
-        jLabel3.setOpaque(false);
-        jLabel3.setText("This tab runs the netsh command in your command prompt. "
+        description.setBackground(new java.awt.Color(102, 204, 255));
+        description.setLineWrap(true);
+        description.setWrapStyleWord(true);
+        description.setAutoscrolls(false);
+        description.setBorder(null);
+        description.setFocusable(false);
+        description.setOpaque(false);
+        description.setText("This tab runs the netsh command in your command prompt. "
         		+ "This is probably the most complicated tool on this list but is also one of the more powerful ones. "
         		+ "It's used to manage a server and can be used to completely configure it. "
         		+ "Click the “help” button!");
@@ -159,7 +159,7 @@ public class netshPage extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(description, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -174,7 +174,7 @@ public class netshPage extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
+                .addComponent(description)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 280, Short.MAX_VALUE)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -275,7 +275,7 @@ public class netshPage extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private JTextArea jLabel3;
+    private JTextArea description;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

@@ -37,7 +37,7 @@ public class CCleaner extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JTextArea();
+        description = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -94,20 +94,20 @@ public class CCleaner extends javax.swing.JFrame {
 
         jPanel5.setBackground(new java.awt.Color(102, 204, 255));
 
-        jLabel3.setBackground(new java.awt.Color(102, 204, 255));
-        jLabel3.setColumns(20);
-        jLabel3.setLineWrap(true);
-        jLabel3.setRows(20);
-        jLabel3.setText("CCleaner, developed by Piriform, is a utility used to clean potentially unwanted files and "
+        description.setBackground(new java.awt.Color(102, 204, 255));
+        description.setColumns(20);
+        description.setLineWrap(true);
+        description.setRows(20);
+        description.setText("CCleaner, developed by Piriform, is a utility used to clean potentially unwanted files and "
         		+ "invalid Windows Registry entries from a computer. CCleaner can remove gigabytes of data from a multitude of "
         		+ "programs in the form of temporary files and cached browser data thus freeing up hard drive space and "
         		+ "increasing system performance.");
-        jLabel3.setWrapStyleWord(true);
-        jLabel3.setAutoscrolls(false);
-        jLabel3.setBorder(null);
-        jLabel3.setFocusable(false);
-        jLabel3.setOpaque(false);
-        jLabel3.setSize(800, 536);
+        description.setWrapStyleWord(true);
+        description.setAutoscrolls(false);
+        description.setBorder(null);
+        description.setFocusable(false);
+        description.setOpaque(false);
+        description.setSize(800, 536);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -115,14 +115,14 @@ public class CCleaner extends javax.swing.JFrame {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(description, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)
+                .addComponent(description, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -255,7 +255,7 @@ public class CCleaner extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private JTextArea jLabel3;
+    private JTextArea description;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

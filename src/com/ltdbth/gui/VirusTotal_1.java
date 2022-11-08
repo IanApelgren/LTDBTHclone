@@ -93,7 +93,10 @@ public class VirusTotal_1 extends javax.swing.JFrame {
         jLabel3.setColumns(20);
         jLabel3.setLineWrap(true);
         jLabel3.setRows(20);
-        jLabel3.setText("VirusTotal is a website created by the Spanish security company Hispasec Sistemas. Launched in June 2004, it was acquired by Google in September 2012.");
+        jLabel3.setText("VirusTotal is a website created by the Spanish security company Hispasec Sistemas. "
+        		+ "Launched in June 2004, it was acquired by Google in September 2012 and continues to be used by many."
+        		+ " VirusTotal can scan files and URLs against the most popular anti-malware services and provides a report of the findings."
+        		+ " VirusTotal should be used prior to downloading/executing unverified files and used before accessing suspicious URLs");
         jLabel3.setWrapStyleWord(true);
         jLabel3.setAutoscrolls(false);
         jLabel3.setBorder(null);

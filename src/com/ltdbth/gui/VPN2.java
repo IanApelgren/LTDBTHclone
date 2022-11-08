@@ -98,7 +98,12 @@ public class VPN2 extends javax.swing.JFrame {
         jLabel3.setFocusable(false);
         jLabel3.setOpaque(false);
         jLabel3.setSize(800, 536);
-        jLabel3.setText("Encrypt your traffic and hide your tracks with a Virtual Proxy Network.");
+        jLabel3.setText("Virtual Private Networks or VPNs create a private network for you to use. "
+        		+ "This is useful for a number of reasons, firstly it masks your IP making everything you do on the internet "
+        		+ "effectively anonymous. A VPN will also encrypt your HTTP packets making it difficult for an adversary to "
+        		+ "intercept/analyze them. While privacy is the main selling point it can also be used for security purposes it "
+        		+ "helps protect your data from things like identity theft. Sadly almost all VPNs operate on a subscription based "
+        		+ "service so all we can do is recommend a service to you.");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);

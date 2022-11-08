@@ -88,7 +88,9 @@ public class SpeedTest extends javax.swing.JFrame {
         jLabel3.setColumns(20);
         jLabel3.setLineWrap(true);
         jLabel3.setRows(20);
-        jLabel3.setText("Analyze your networks download and upload speed and compare with the speeds you are paying for.");
+        jLabel3.setText("Internet speed tests can be useful not only for troubleshooting your network to see if the problem is "
+        		+ "local or with the network. It's also useful for scrutinizing your service provider as quite frequently ISP’s"
+        		+ "will give you significantly less speed than what you pay for and this is a good way to find that out.");
         jLabel3.setWrapStyleWord(true);
         jLabel3.setAutoscrolls(false);
         jLabel3.setBorder(null);

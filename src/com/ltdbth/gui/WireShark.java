@@ -101,7 +101,13 @@ public class WireShark extends javax.swing.JFrame {
         jLabel3.setFocusable(false);
         jLabel3.setOpaque(false);
         jLabel3.setSize(800, 536);
-        jLabel3.setText("WireShark is a network traffic monitoring tool. See outgoing and incoming traffic to your network!");
+        jLabel3.setText("WireShark is a more advanced tool but useful nonetheless. "
+        		+ "Used specifically for packet analyzing, wireshark can give you a more detailed breakdown of your network"
+        		+ " allowing you to troubleshoot your network with precision your router's log might not give you. "
+        		+ "It can also be used more proactively, by setting up a time to scan say between business hours "
+        		+ "you can have a comprehensive log of your network traffic throughout the day.  "
+        		+ "To use the app you first have to get your router's ip which can be found in either router settings "
+        		+ "or ip config on the system tools page.");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);

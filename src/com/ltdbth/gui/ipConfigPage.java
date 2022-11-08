@@ -1,5 +1,4 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
@@ -55,6 +54,7 @@ public class ipConfigPage extends javax.swing.JFrame {
         DscriptionTextArea1.setOpaque(false);
         jScrollPane2.setViewportView(DscriptionTextArea1);
 
+        setResizable(false);
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(102, 204, 255));

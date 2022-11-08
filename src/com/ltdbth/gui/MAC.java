@@ -11,6 +11,7 @@ import java.io.InputStreamReader;
 import java.util.StringJoiner;
 
 import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
 
 /**
  *houses all components for MAC 
@@ -38,9 +39,10 @@ public class MAC extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         DscriptionTextArea = new javax.swing.JTextArea();
         nameLabel = new javax.swing.JLabel();
-        PictureLabel1 = new javax.swing.JLabel();
+        PictureLabel1 = new javax.swing.JTextArea();
         PictureLabel2 = new javax.swing.JLabel();
 
+        setResizable(false);
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(102, 204, 255));
@@ -106,6 +108,16 @@ public class MAC extends javax.swing.JFrame {
         nameLabel.setFont(new java.awt.Font("Georgia", 1, 36)); 
         nameLabel.setText("MAC Address finder and lookup");
 
+        PictureLabel1.setBackground(new java.awt.Color(102, 204, 255));
+        PictureLabel1.setColumns(20);
+        PictureLabel1.setLineWrap(true);
+        PictureLabel1.setRows(20);
+        PictureLabel1.setWrapStyleWord(true);
+        PictureLabel1.setAutoscrolls(false);
+        PictureLabel1.setBorder(null);
+        PictureLabel1.setFocusable(false);
+        PictureLabel1.setOpaque(false);
+        PictureLabel1.setSize(300, 536);
         PictureLabel1.setText("Find all devices connected to your network. Look up their the address to see type.");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -224,7 +236,7 @@ public class MAC extends javax.swing.JFrame {
     // Variables declaration
     private javax.swing.JButton BackButton;
     private javax.swing.JTextArea DscriptionTextArea;
-    private javax.swing.JLabel PictureLabel1;
+    private JTextArea PictureLabel1;
     private javax.swing.JLabel PictureLabel2;
     private javax.swing.JButton RunButton;
     private javax.swing.JPanel jPanel1;

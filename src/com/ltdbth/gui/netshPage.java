@@ -3,6 +3,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringJoiner;
 
+import javax.swing.JTextArea;
+
 /*
  * @author Ian Apelgren 
  * @auther James Cooke
@@ -36,10 +38,11 @@ public class netshPage extends javax.swing.JFrame {
         Launch = new javax.swing.JButton();
         HelpButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JTextArea();
         jScrollPane1 = new javax.swing.JScrollPane();
         DscriptionTextArea = new javax.swing.JTextArea();
 
+        setResizable(false);
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(102, 204, 255));
@@ -122,6 +125,13 @@ public class netshPage extends javax.swing.JFrame {
         jLabel2.setText("Click the \"Launch\" button to bring up the netsh window. ");
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
+        jLabel3.setBackground(new java.awt.Color(102, 204, 255));
+        jLabel3.setLineWrap(true);
+        jLabel3.setWrapStyleWord(true);
+        jLabel3.setAutoscrolls(false);
+        jLabel3.setBorder(null);
+        jLabel3.setFocusable(false);
+        jLabel3.setOpaque(false);
         jLabel3.setText("Click the \"Help\" Button to bring up a list of commands.");
 
         DscriptionTextArea.setBackground(new java.awt.Color(102, 204, 255));
@@ -262,7 +272,7 @@ public class netshPage extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private JTextArea jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

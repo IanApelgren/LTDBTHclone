@@ -37,9 +37,9 @@ public class MAC extends javax.swing.JFrame {
         RunButton = new javax.swing.JButton();
         BackButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        DscriptionTextArea = new javax.swing.JTextArea();
+        description = new javax.swing.JTextArea();
         nameLabel = new javax.swing.JLabel();
-        PictureLabel1 = new javax.swing.JTextArea();
+        description = new javax.swing.JTextArea();
         PictureLabel2 = new javax.swing.JLabel();
 
         setResizable(false);
@@ -108,17 +108,17 @@ public class MAC extends javax.swing.JFrame {
         nameLabel.setFont(new java.awt.Font("Georgia", 1, 36)); 
         nameLabel.setText("MAC Address finder and lookup");
 
-        PictureLabel1.setBackground(new java.awt.Color(102, 204, 255));
-        PictureLabel1.setColumns(20);
-        PictureLabel1.setLineWrap(true);
-        PictureLabel1.setRows(20);
-        PictureLabel1.setWrapStyleWord(true);
-        PictureLabel1.setAutoscrolls(false);
-        PictureLabel1.setBorder(null);
-        PictureLabel1.setFocusable(false);
-        PictureLabel1.setOpaque(false);
-        PictureLabel1.setSize(300, 536);
-        PictureLabel1.setText("A MAC address is a unique number assigned to network control devices like a computer's "
+        description.setBackground(new java.awt.Color(102, 204, 255));
+        description.setColumns(20);
+        description.setLineWrap(true);
+        description.setRows(20);
+        description.setWrapStyleWord(true);
+        description.setAutoscrolls(false);
+        description.setBorder(null);
+        description.setFocusable(false);
+        description.setOpaque(false);
+        description.setSize(300, 536);
+        description.setText("A MAC address is a unique number assigned to network control devices like a computer's "
         		+ "wifi adapter and can be used to see exactly what is on your network. If you check this often you can "
         		+ "get a feel for how many devices you have and will be able to notice if a device that shouldn't be there is. "
         		+ "Use the lookup function to find the manufacturer of the device. ");
@@ -137,7 +137,7 @@ public class MAC extends javax.swing.JFrame {
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 513, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(PictureLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(description, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(PictureLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
@@ -151,7 +151,7 @@ public class MAC extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(PictureLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(description, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
                         .addComponent(PictureLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -239,7 +239,7 @@ public class MAC extends javax.swing.JFrame {
     // Variables declaration
     private javax.swing.JButton BackButton;
     private javax.swing.JTextArea DscriptionTextArea;
-    private JTextArea PictureLabel1;
+    private JTextArea description;
     private javax.swing.JLabel PictureLabel2;
     private javax.swing.JButton RunButton;
     private javax.swing.JPanel jPanel1;

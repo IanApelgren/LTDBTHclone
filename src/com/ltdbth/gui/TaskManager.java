@@ -196,7 +196,15 @@ public class TaskManager extends javax.swing.JFrame {
 
     //action event for run button
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) throws IOException {
-    	Runtime.getRuntime().exec("cmd /c start taskmgr.exe");
+    	boolean winOS = Launcher.setOS();
+    	if ( winOS == true)
+    	{
+    		Runtime.getRuntime().exec("cmd /c start taskmgr.exe");
+    	}
+    	else
+    	{
+    		Runtime.getRuntime().exec("open -a \"Activity Monitor\"");
+    	}
     }
 
     /**

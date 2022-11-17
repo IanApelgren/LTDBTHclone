@@ -135,7 +135,7 @@ public class netshPage extends javax.swing.JFrame {
         description.setText("This tab runs the netsh command in your command prompt. "
         		+ "This is probably the most complicated tool on this list but is also one of the more powerful ones. "
         		+ "It's used to manage a server and can be used to completely configure it. "
-        		+ "Click the “help” button!");
+        		+ "Click the \"help\" button!");
 
         DscriptionTextArea.setBackground(new java.awt.Color(102, 204, 255));
         DscriptionTextArea.setColumns(20);

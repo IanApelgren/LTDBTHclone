@@ -1,3 +1,8 @@
+import java.awt.Image;
+import java.awt.Toolkit;
+
+import javax.swing.ImageIcon;
+
 /*
  * @author Ian Apelgren
  * @author James Cooke
@@ -31,7 +36,7 @@ public class mainSplash extends javax.swing.JFrame {
         logout = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
+      
         jPanel1.setBackground(new java.awt.Color(102, 204, 255));
         jPanel1.setForeground(new java.awt.Color(0, 204, 255));
 
@@ -139,7 +144,7 @@ public class mainSplash extends javax.swing.JFrame {
         pack();
     }
 
-    //network tools action event
+	//network tools action event
     private void networkToolsActionPerformed(java.awt.event.ActionEvent evt) {
         new NetworkToolsPage().setVisible(true);
         this.dispose();

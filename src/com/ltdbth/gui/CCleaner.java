@@ -217,7 +217,15 @@ public class CCleaner extends javax.swing.JFrame {
 
     //action event for launch button uses
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) throws IOException {
-    	Runtime.getRuntime().exec("cmd /c start CCleaner.exe");
+    	boolean winOS = Launcher.setOS();
+    	if (winOS == true) 
+    	{
+    		Runtime.getRuntime().exec("cmd /c start CCleaner.exe");
+    	}
+    	else
+    	{
+    		Runtime.getRuntime().exec("open -a CCleaner");
+    	}
     }
 
     /**

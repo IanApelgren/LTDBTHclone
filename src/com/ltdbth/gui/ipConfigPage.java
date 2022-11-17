@@ -178,9 +178,18 @@ public class ipConfigPage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void RunButtonActionPerformed(java.awt.event.ActionEvent evt) throws IOException {//GEN-FIRST:event_RunButtonActionPerformed
-    	Process p = Runtime.getRuntime().exec("ipconfig");
+    	boolean winOS = Launcher.setOS();
+    	Process p;
+    	if (winOS) {
+    		p = Runtime.getRuntime().exec("ipconfig");
+    	}
+    	else
+    	{
+    		p = Runtime.getRuntime().exec("route -n get default");
+    	}
     	
-    	BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
+    	
+		BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
     	
     	StringJoiner joiner = new StringJoiner("\n");
     	String line = null;

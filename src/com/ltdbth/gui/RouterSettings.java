@@ -202,37 +202,58 @@ public class RouterSettings extends javax.swing.JFrame {
     //action event for launch button
  
 	private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) throws IOException, URISyntaxException {
+    	boolean winOS = Launcher.setOS();
     	
     	char c;
     	String s = "";
-    	Process p = Runtime.getRuntime().exec("ipconfig");
+    	Process p;
+    	if(winOS)
+    	{
+        	p = Runtime.getRuntime().exec("ipconfig");
+    	}
+    	else 
+    	{
+    		p = Runtime.getRuntime().exec("route get default | grep gateway");
+    	}
     	
-    	BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
+        BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
     	
     	StringJoiner joiner = new StringJoiner("\n");
     	String line = null;
-    	
-    	//iterates through ipconfig. looks for default gateway. router IP is always displayed first
-    	while ((line = stdInput.readLine()) != null) 
+    	if (winOS)
     	{
-    		//if we find default gateway gets the ip from it
-    		if(line.contains("   Default Gateway") == true) 
+    		//iterates through ipconfig. looks for default gateway. router IP is always displayed first
+    		while ((line = stdInput.readLine()) != null) 
     		{
-    			for (int i = 0; i != line.length() - 39; i++)
-    			{		
+    			//if we find default gateway gets the ip from it
+    			if(line.contains("   Default Gateway") == true) 
+    			{
+    				for (int i = 0; i != line.length() - 39; i++)
+    				{		
     					c = line.charAt(i+39);	
     					s = s + c;
+    				}
+    				//prepares ip to be lauched in browser
+    				toWebsite(s);
+    				break;
     			}
-    			//prepares ip to be lauched in browser
-    			toWebsite(s);
-    			break;
+    			joiner.add(line);
+    		
     		}
-    		joiner.add(line);
+    	
+    	}
+    	else
+    	{
+    		line = stdInput.readLine();
+    		for (int i = 0; i != line.length() - 14; i++)
+    		{
+    			c = line.charAt(i+14);
+    			s = s + c;
+    		}
+    		toWebsite(s);
     		
     	}
-    	
-    }
-
+	}
 	
 	/**
 	 * 

@@ -37,7 +37,7 @@ public class MAC extends javax.swing.JFrame {
         RunButton = new javax.swing.JButton();
         BackButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        description = new javax.swing.JTextArea();
+        DescriptionTextArea = new javax.swing.JTextArea();
         nameLabel = new javax.swing.JLabel();
         description = new javax.swing.JTextArea();
         PictureLabel2 = new javax.swing.JLabel();
@@ -93,17 +93,17 @@ public class MAC extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        DscriptionTextArea.setBackground(new java.awt.Color(102, 204, 255));
-        DscriptionTextArea.setColumns(20);
-        DscriptionTextArea.setLineWrap(true);
-        DscriptionTextArea.setRows(20);
-        DscriptionTextArea.setText("Output will go here");
-        DscriptionTextArea.setWrapStyleWord(true);
-        DscriptionTextArea.setAutoscrolls(false);
-        DscriptionTextArea.setBorder(null);
-        DscriptionTextArea.setFocusable(false);
-        DscriptionTextArea.setOpaque(false);
-        jScrollPane1.setViewportView(DscriptionTextArea);
+        DescriptionTextArea.setBackground(new java.awt.Color(102, 204, 255));
+        DescriptionTextArea.setColumns(20);
+        DescriptionTextArea.setLineWrap(true);
+        DescriptionTextArea.setRows(20);
+        DescriptionTextArea.setText("Output will go here");
+        DescriptionTextArea.setWrapStyleWord(true);
+        DescriptionTextArea.setAutoscrolls(false);
+        DescriptionTextArea.setBorder(null);
+        DescriptionTextArea.setFocusable(false);
+        DescriptionTextArea.setOpaque(false);
+        jScrollPane1.setViewportView(DescriptionTextArea);
 
         nameLabel.setFont(new java.awt.Font("Georgia", 1, 36)); 
         nameLabel.setText("MAC Address finder and lookup");
@@ -188,7 +188,7 @@ public class MAC extends javax.swing.JFrame {
     		
     	}
     	String output = joiner.toString();
-    	DscriptionTextArea.setText(output);
+    	DescriptionTextArea.setText(output);
     	
     	
 	}
@@ -238,7 +238,7 @@ public class MAC extends javax.swing.JFrame {
 
     // Variables declaration
     private javax.swing.JButton BackButton;
-    private javax.swing.JTextArea DscriptionTextArea;
+    private javax.swing.JTextArea DescriptionTextArea;
     private JTextArea description;
     private javax.swing.JLabel PictureLabel2;
     private javax.swing.JButton RunButton;

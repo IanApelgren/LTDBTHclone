@@ -217,9 +217,10 @@ public class RouterSettings extends javax.swing.JFrame {
     	}
     	
         BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
+        System.out.println(stdInput.toString());
     	
     	StringJoiner joiner = new StringJoiner("\n");
-    	String line = null;
+    	String line = "";
     	if (winOS)
     	{
     		//iterates through ipconfig. looks for default gateway. router IP is always displayed first
@@ -244,7 +245,8 @@ public class RouterSettings extends javax.swing.JFrame {
     	}
     	else
     	{
-    		line = stdInput.readLine();
+    		line += stdInput.readLine();
+    		System.out.println(line);
     		for (int i = 0; i != line.length() - 14; i++)
     		{
     			c = line.charAt(i+14);

@@ -11,15 +11,13 @@ public class Launcher
 	public static boolean setOS()
 	{
 		String OS = System.getProperty("os.name");
-		boolean winos = false;
 		if(OS.charAt(0) == 'W' || OS.charAt(0) == 'w')
 		{
-			winos = true;
+			return true;
 		}
 		else 
 		{
-			winos = false;
+			return false;
 		}
-		return winos;
 	}
 }

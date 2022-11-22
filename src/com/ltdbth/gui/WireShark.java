@@ -220,7 +220,7 @@ public class WireShark extends javax.swing.JFrame {
     //action event for launch button
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) throws IOException {
     	boolean winOS = Launcher.setOS();
-    	if (winOS == true)
+    	if (winOS)
     	{
     		Runtime.getRuntime().exec("cmd /c start Wireshark.exe");
     	}

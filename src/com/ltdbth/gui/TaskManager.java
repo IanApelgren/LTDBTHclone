@@ -90,11 +90,13 @@ public class TaskManager extends javax.swing.JFrame {
         description.setColumns(20);
         description.setLineWrap(true);
         description.setRows(20);
-        description.setText("Task Manager is a built in application the comes with all versions of the Windows operating system. "
+        description.setText("Windows: Task Manager is a built in application the comes with all versions of the Windows operating system. "
         		+ "Task Manager can be used to monitor system resources, processes and dictate which processes run upon startup."
         		+ " Minimizing which processes are launched upon start up can drastically increase start up time. "
         		+ "Monitoring which processes are taking up the most resources is important for optimizing system performence "
-        		+ "and knowing which processes are expected is key to recognizing if you have fallen victim to malware.");
+        		+ "and knowing which processes are expected is key to recognizing if you have fallen victim to malware.\n" 
+        		+ "\nFor MacOS users the launch button will open the terminal. Once the terminal is displayed, type \"top\" or \"open -a \"Activity Monitor\"\""
+        		+ " to see a list of all your processes.");
         description.setWrapStyleWord(true);
         description.setAutoscrolls(false);
         description.setBorder(null);
@@ -197,14 +199,12 @@ public class TaskManager extends javax.swing.JFrame {
     //action event for run button
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) throws IOException {
     	boolean winOS = Launcher.setOS();
-    	String activityMonitor = "Activity Monitor";
     	if (winOS)
     	{
     		Runtime.getRuntime().exec("cmd /c start taskmgr.exe");
     	}
     	else
     	{
-    		System.out.println("open -a " + "\"" + activityMonitor + "\"");
     		Runtime.getRuntime().exec("open -a Terminal");
     	}
     }

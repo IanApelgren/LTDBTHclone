@@ -213,11 +213,11 @@ public class RouterSettings extends javax.swing.JFrame {
     	}
     	else 
     	{
-    		p = Runtime.getRuntime().exec("route get default | grep gateway");
+    		p = Runtime.getRuntime().exec("route get default");
+    		//p = Runtime.getRuntime().exec("ifconfig");
     	}
     	
         BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
-        System.out.println(stdInput.toString());
     	
     	StringJoiner joiner = new StringJoiner("\n");
     	String line = "";
@@ -245,15 +245,23 @@ public class RouterSettings extends javax.swing.JFrame {
     	}
     	else
     	{
-    		line += stdInput.readLine();
-    		System.out.println(line);
-    		for (int i = 0; i != line.length() - 14; i++)
-    		{
-    			c = line.charAt(i+14);
-    			s = s + c;
+    		StringBuilder output = new StringBuilder();
+    		line = null;
+    		while((line = stdInput.readLine()) != null) {
+    		       output.append(line);
     		}
-    		toWebsite(s);
+    		String result = output.toString();
+    		int i = 0;
+    		while (result.charAt(i) != 'g') {
+    			i++;
+    		}
+    		String ip = "";
     		
+    		for (int j = 73; j < 87; j++) {
+    			ip += result.charAt(j);
+    		}
+    		
+    		toWebsite(ip);
     	}
 	}
 	
@@ -267,6 +275,7 @@ public class RouterSettings extends javax.swing.JFrame {
 	public void toWebsite(String s) throws URISyntaxException, IOException
 	{
 		String website = "https://" + s;
+		System.out.println(website);
 		URI uriBase = new URI( website);
 		java.awt.Desktop.getDesktop().browse(uriBase);
 	}

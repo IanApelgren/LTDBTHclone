@@ -122,7 +122,7 @@ public class netshPage extends javax.swing.JFrame {
         );
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel2.setText("Click the \"Launch\" button to bring up the netsh window. ");
+        jLabel2.setText("Windows Only: Click the \"Launch\" button to bring up the netsh window. ");
         jLabel2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
         description.setBackground(new java.awt.Color(102, 204, 255));

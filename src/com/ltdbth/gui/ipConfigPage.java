@@ -120,9 +120,13 @@ public class ipConfigPage extends javax.swing.JFrame {
         DscriptionTextArea2.setColumns(20);
         DscriptionTextArea2.setLineWrap(true);
         DscriptionTextArea2.setRows(20);
-        DscriptionTextArea2.setText("The IP Config tool will display useful infomation about your home network. "
+        DscriptionTextArea2.setText("Windows: The IP Config tool will display useful infomation about your home network. "
         		+ "IP Config shows all current TCP/IP network configurations and provides functionality to "
-        		+ "refresh both Dynamic Host Configuration and Domain Name System protocols.");
+        		+ "refresh both Dynamic Host Configuration and Domain Name System protocols."
+        		+ " MacOS: Once the launch button is pressed the application will run the command \"route -n get default\"."
+        		+ " This command will show your current network interface and your default gateway. If you are using a wired connection,"
+        		+ " and enter the default gateway into your browser, the browser will bring you to your routers configuration page."
+        		+ " Upon login this page always the user to change SSID, passwords and which MAC addresses have access to the network.");
         DscriptionTextArea2.setWrapStyleWord(true);
         DscriptionTextArea2.setAutoscrolls(false);
         DscriptionTextArea2.setBorder(null);

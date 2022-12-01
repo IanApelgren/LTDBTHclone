@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+import javax.swing.JTextArea;
+
 /**
  *houses all components for recommendations
  */
@@ -35,17 +37,18 @@ public class Reccomendations extends javax.swing.JFrame {
         CIObutton = new javax.swing.JButton();
         FTCButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        jTextPane1 = new javax.swing.JTextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextPane2 = new javax.swing.JTextPane();
+        jTextPane2 = new javax.swing.JTextArea();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTextPane3 = new javax.swing.JTextPane();
+        jTextPane3 = new javax.swing.JTextArea();
         jScrollPane4 = new javax.swing.JScrollPane();
-        jTextPane4 = new javax.swing.JTextPane();
+        jTextPane4 = new javax.swing.JTextArea();
         gobackButton = new javax.swing.JButton();
 
         jButton1.setText("jButton1");
 
+        setResizable(false);
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(102, 204, 255));
@@ -89,16 +92,6 @@ public class Reccomendations extends javax.swing.JFrame {
 
         //action listener for NIST button
         NISTbutton.setText("National Institute Of Standards & Technology");
-        
-//        NISTbutton.addMouseListener(new java.awt.event.MouseAdapter() {
-//        	public void mouseEntered(java.awt.event.MouseEvent evt) {
-//        		jTextPane2.setVisible(false);
-//        	}
-//        	public void mouseExited(java.awt.event.MouseEvent evt) {
-//        		jTextPane2.setVisible(true);
-//        	}
-//        });
-        
         
         NISTbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -162,26 +155,46 @@ public class Reccomendations extends javax.swing.JFrame {
 
         jTextPane1.setEditable(false);
         jTextPane1.setBackground(new java.awt.Color(102, 204, 255));
+        jTextPane1.setLineWrap(true);
+        jTextPane1.setWrapStyleWord(true);
         jTextPane1.setText("CISA is a government agency that leads the national effort to understand, manage, and reduce risk to our cyber and physical infrasture. Click the button to be brought to a list of the most recent cybersecurity vulrabilities.");
         jScrollPane1.setViewportView(jTextPane1);
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        jScrollPane1.setEnabled(false);
 
         jTextPane2.setEditable(false);
         jTextPane2.setBackground(new java.awt.Color(102, 204, 255));
         jTextPane2.setText("NIST provides a dashboard showcasing common vulnrablity exploits (CVEs) and their status as well as severity. Click the button to see the most recent CVEs on their website.");
         jTextPane2.setToolTipText("");
+        jTextPane2.setLineWrap(true);
+        jTextPane2.setWrapStyleWord(true);
         jScrollPane2.setViewportView(jTextPane2);
+        jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+        jScrollPane2.setEnabled(false);
 
         jTextPane3.setEditable(false);
         jTextPane3.setBackground(new java.awt.Color(102, 204, 255));
         jTextPane3.setText("CioWiki provides an encyclopedia regarding IT management. This entry provides general information about cybersecurity and types of threats/attacks.");
         jTextPane3.setToolTipText("");
+        jTextPane3.setLineWrap(true);
+        jTextPane3.setWrapStyleWord(true);
         jScrollPane3.setViewportView(jTextPane3);
+        jScrollPane3.setEnabled(false);
+        jScrollPane3.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         jTextPane4.setEditable(false);
         jTextPane4.setBackground(new java.awt.Color(102, 204, 255));
         jTextPane4.setText("The FTC provides introductory cybersecurity infromation for small buisnesses. Click the button to learn about how to protect your buisness and take a quiz.");
         jTextPane4.setToolTipText("");
+        jTextPane4.setLineWrap(true);
+        jTextPane4.setWrapStyleWord(true);
         jScrollPane4.setViewportView(jTextPane4);
+        jScrollPane4.setEnabled(false);
+        jScrollPane4.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane4.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
         gobackButton.setText("Go Back");
         gobackButton.addActionListener(new java.awt.event.ActionListener() {
@@ -328,9 +341,9 @@ public class Reccomendations extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JTextPane jTextPane1;
-    private javax.swing.JTextPane jTextPane2;
-    private javax.swing.JTextPane jTextPane3;
-    private javax.swing.JTextPane jTextPane4;
+    private JTextArea jTextPane1;
+    private JTextArea jTextPane2;
+    private JTextArea jTextPane3;
+    private JTextArea jTextPane4;
    
 }

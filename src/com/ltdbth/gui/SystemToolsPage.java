@@ -4,7 +4,7 @@
  *System Tools page houses links to the individual tools of system administration
  */
 /**
- *houses all the componenets of systems tools
+ *houses all the components of systems tools
  */
 public class SystemToolsPage extends javax.swing.JFrame {
 
@@ -31,6 +31,7 @@ public class SystemToolsPage extends javax.swing.JFrame {
         SecurePasswordButton = new javax.swing.JButton();
         BackButton = new javax.swing.JButton();
 
+        setResizable(false);
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(102, 204, 255));

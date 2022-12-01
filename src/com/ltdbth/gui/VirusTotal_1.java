@@ -15,7 +15,6 @@ public class VirusTotal_1 extends javax.swing.JFrame {
         initComponents();
     }
 
-    
     @SuppressWarnings("unchecked")
     private void initComponents() {
 
@@ -27,10 +26,11 @@ public class VirusTotal_1 extends javax.swing.JFrame {
         goBackButton = new javax.swing.JButton();
         launchButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
         jPanel1.setBackground(new java.awt.Color(102, 204, 255));
 
         jPanel2.setBackground(new java.awt.Color(102, 204, 255));
@@ -54,7 +54,16 @@ public class VirusTotal_1 extends javax.swing.JFrame {
         description.setColumns(20);
         description.setRows(5);
         description.setBorder(null);
+        description.setText("");
         jScrollPane1.setViewportView(description);
+        description.setText("VirusTotal is a website created by the Spanish security company Hispasec Sistemas. "
+                + "Launched in June 2004, it was acquired by Google in September 2012 and continues to be used by many."
+                + " VirusTotal can scan files and URLs against the most popular anti-malware services and provides a report of the findings."
+                + " VirusTotal should be used prior to downloading/executing unverified files and used before accessing suspicious URLs");
+        description.setLineWrap(true);
+        description.setWrapStyleWord(true);
+        description.setEditable(false);
+        jScrollPane1.setEnabled(false);
 
         goBackButton.setText("Go Back.");
         goBackButton.addActionListener(new java.awt.event.ActionListener() {
@@ -68,48 +77,45 @@ public class VirusTotal_1 extends javax.swing.JFrame {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 try {
 					launchButtonActionPerformed(evt);
-				} catch (IOException e) {
-					e.printStackTrace();
 				} catch (URISyntaxException e) {
+					e.printStackTrace();
+				} catch (IOException e) {
 					e.printStackTrace();
 				}
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon("/Users/jamescooke/Desktop/capstone/LockDoorsBattenHatchesGUI/src/com/ltdbth/gui/images/VirusTotal.png")); // NOI18N
+        boolean winOS = Launcher.setOS();
+    	if (winOS) 
+    	{
+    		jLabel4.setIcon(new javax.swing.ImageIcon(".\\src\\com\\ltdbth\\gui\\images\\VirusTotal.png"));
+    	}
+    	else
+    	{
+    		jLabel4.setIcon(new javax.swing.ImageIcon("./src/com/ltdbth/gui/images/VirusTotal.png"));
+    	} 
 
-        description.setText("VirusTotal is a website created by the Spanish security company Hispasec Sistemas. "
-        		+ "Launched in June 2004, it was acquired by Google in September 2012 and continues to be used by many."
-        		+ " VirusTotal can scan files and URLs against the most popular anti-malware services and provides a report of the findings."
-        		+ " VirusTotal should be used prior to downloading/executing unverified files and used before accessing suspicious URLs");
-        description.setWrapStyleWord(true);
-        description.setAutoscrolls(false);
-        description.setBorder(null);
-        description.setFocusable(false);
-        description.setOpaque(false);
-        description.setLineWrap(true);
-        
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addComponent(goBackButton, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(76, 76, 76)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(goBackButton, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(launchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(219, 219, 219)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 362, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel2)
-                        .addGap(0, 207, Short.MAX_VALUE)))
+                                .addComponent(launchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(24, 24, 24)
+                                .addComponent(jLabel2)
+                                .addGap(0, 202, Short.MAX_VALUE)))))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -120,16 +126,17 @@ public class VirusTotal_1 extends javax.swing.JFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(78, 78, 78)
-                        .addComponent(jLabel2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel2)
+                        .addGap(18, 18, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(launchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(goBackButton, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap())
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(launchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(goBackButton, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(62, Short.MAX_VALUE))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -146,7 +153,7 @@ public class VirusTotal_1 extends javax.swing.JFrame {
         pack();
     }
 
-    private void launchButtonActionPerformed(java.awt.event.ActionEvent evt) throws IOException, URISyntaxException {
+    private void launchButtonActionPerformed(java.awt.event.ActionEvent evt) throws URISyntaxException, IOException {
     	String website = "https://www.virustotal.com/gui/home/upload";
         URI uriBase = new URI(website);
         java.awt.Desktop.getDesktop().browse(uriBase);
@@ -157,9 +164,6 @@ public class VirusTotal_1 extends javax.swing.JFrame {
         this.dispose();
     }
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -187,15 +191,15 @@ public class VirusTotal_1 extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify//
     private javax.swing.JTextArea description;
     private javax.swing.JButton goBackButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton launchButton;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration//
 }

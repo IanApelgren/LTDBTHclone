@@ -14,7 +14,7 @@ import javax.swing.JTextArea;
 
 
 /**
- *houses all components fo net sh
+ *houses all components for netsh
  */
 public class netshPage extends javax.swing.JFrame {
 
@@ -49,7 +49,7 @@ public class netshPage extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(102, 204, 255));
 
-        jLabel1.setFont(new java.awt.Font("Georgia", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Georgia", 1, 36));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Advanced Network Configuration");
 

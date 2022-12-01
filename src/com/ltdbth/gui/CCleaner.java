@@ -2,6 +2,8 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 import javax.swing.JTextArea;
 
 /*
@@ -41,7 +43,7 @@ public class CCleaner extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-
+        jPanel3.add(new JLabel(new ImageIcon("./images/ccleaner.png")));
         jPanel1.setPreferredSize(new java.awt.Dimension(800, 536));
         setResizable(false);
         

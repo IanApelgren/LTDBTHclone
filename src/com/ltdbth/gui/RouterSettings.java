@@ -217,7 +217,7 @@ public class RouterSettings extends javax.swing.JFrame {
     	}
     	
         BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
-    	
+    	System.out.println(stdInput.toString());
     	StringJoiner joiner = new StringJoiner("\n");
     	String line = null;
     	if (winOS)

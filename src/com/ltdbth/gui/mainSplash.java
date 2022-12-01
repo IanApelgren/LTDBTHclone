@@ -6,7 +6,7 @@ import javax.swing.ImageIcon;
 /*
  * @author Ian Apelgren
  * @author James Cooke
- * the main splash is the central hub of the aplication and houses links to every other part of the app
+ * the main splash is the central hub of the application and houses links to every other part of the application
  */
 
 
@@ -36,7 +36,8 @@ public class mainSplash extends javax.swing.JFrame {
         logout = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-      
+        setResizable(false);
+        
         jPanel1.setBackground(new java.awt.Color(102, 204, 255));
         jPanel1.setForeground(new java.awt.Color(0, 204, 255));
 

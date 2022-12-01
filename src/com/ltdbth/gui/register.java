@@ -44,6 +44,7 @@ public class register extends javax.swing.JFrame {
         RegisterButtonACscreen = new javax.swing.JButton();
         GoBackButtonACscreen = new javax.swing.JButton();
 
+        setResizable(false);
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(102, 153, 255));
@@ -198,7 +199,7 @@ public class register extends javax.swing.JFrame {
         pack();
     }
 
-    //event handeler for register button
+    //event handler for register button
     private void RegisterButtonACscreenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegisterButtonACscreenActionPerformed
       
         Operations operations = new Operations();

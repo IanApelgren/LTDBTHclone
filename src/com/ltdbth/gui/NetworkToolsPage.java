@@ -17,7 +17,7 @@ public class NetworkToolsPage extends javax.swing.JFrame {
     }
 
     /**
-     * initializes all componenets
+     * initializes all components
      */
     @SuppressWarnings("unchecked")                        
     private void initComponents() {
@@ -34,6 +34,7 @@ public class NetworkToolsPage extends javax.swing.JFrame {
         netshButton = new javax.swing.JButton();
         BackButton = new javax.swing.JButton();
 
+        setResizable(false);
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(102, 204, 255));

@@ -13,7 +13,6 @@ public class PasswordGen extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jTextField2 = new javax.swing.JTextField();
@@ -31,9 +30,8 @@ public class PasswordGen extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jTextField3 = new javax.swing.JTextField();
         Goback = new javax.swing.JButton();
-
-        jTextField2.setText("jTextField2");
-
+        
+        setResizable(false);
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(804, 536));
 
@@ -211,25 +209,25 @@ public class PasswordGen extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
-    private void upperCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_upperCheckActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_upperCheckActionPerformed
+    private void upperCheckActionPerformed(java.awt.event.ActionEvent evt) {
+        // no action
+    }
 
-    private void specialCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_specialCheckActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_specialCheckActionPerformed
+    private void specialCheckActionPerformed(java.awt.event.ActionEvent evt) {
+    	// no action
+    }
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {
+    	// no action
+    }
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {
+    	// no action
+    }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         
         String upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String lower = upper.toLowerCase();
@@ -256,7 +254,7 @@ public class PasswordGen extends javax.swing.JFrame {
         }
          
          jTextField3.setText(new String(password));
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }
 
     private void GobackActionPerformed(java.awt.event.ActionEvent evt) {
     
@@ -277,7 +275,7 @@ public class PasswordGen extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify//
     private javax.swing.JButton Goback;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
@@ -293,5 +291,5 @@ public class PasswordGen extends javax.swing.JFrame {
     private javax.swing.JCheckBox numCheck;
     private javax.swing.JCheckBox specialCheck;
     private javax.swing.JCheckBox upperCheck;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration//
 }

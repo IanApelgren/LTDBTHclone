@@ -91,11 +91,11 @@ public class WireShark extends javax.swing.JFrame {
         boolean winOS = Launcher.setOS();
     	if (winOS) 
     	{
-    		jLabel2.setIcon(new javax.swing.ImageIcon(".\\src\\com\\ltdbth\\gui\\images\\wireshark.png"));
+    		jLabel2.setIcon(new javax.swing.ImageIcon(".\\images\\wireshark.png"));
     	}
     	else
     	{
-    		jLabel2.setIcon(new javax.swing.ImageIcon("./src/com/ltdbth/gui/images/wireshark.png"));
+    		jLabel2.setIcon(new javax.swing.ImageIcon("./images/wireshark.png"));
     	} 
 
     	jScrollPane1.setEnabled(false);

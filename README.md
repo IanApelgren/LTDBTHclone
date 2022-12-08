@@ -22,6 +22,8 @@ Launches from a single JAR file.
 
 GitHub Link: https://github.com/cookejm1/LockDoorsBattenHatchesGUI
 
+Demo and Installation Guide: https://www.youtube.com/watch?v=DjhvUWfFUHo&ab_channel=JamesCooke
+
 Challenges: Challenges for the team include: making the application layout and tools user friendly, 
 making the graphical user interface itself and integrating tools, adding images to swing applications while keeping the look, feel, and size we wanted.
 

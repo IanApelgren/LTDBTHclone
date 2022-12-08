@@ -26,7 +26,11 @@ Challenges: Challenges for the team include: making the application layout and t
 making the graphical user interface itself and integrating tools, adding images to swing applications while keeping the look, feel, and size we wanted.
 
 Installing and using LTDBTH:
-you can isntall LTDBTH by cloning the github repository to your local machine. To run you must have Java Development Kit: https://www.oracle.com/java/technologies/downloads/#jdk19-windows.
-as well as a Java Virtual Machine: https://www.java.com/en/download/.
-Navigate to your local repository in cmd on windows or terminal on mac and type javac \*.java, then type java Launcher. 
+you can isntall LTDBTH by cloning the github repository to your local machine. To run you must have Java Development Kit,
+as well as a Java Virtual Machine. Navigate to your local repository in cmd on windows or terminal on mac and type javac \*.java, then type java Launcher and click offline mode. 
+
+Java Development Kit: https://www.oracle.com/java/technologies/downloads/#jdk19-windows
+
+Java Virtual Machine: https://www.java.com/en/download/
+
 

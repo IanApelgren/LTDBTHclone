@@ -21,9 +21,12 @@ Cross platform combadability with windows and mac systems.
 Launches from a single JAR file.
 
 GitHub Link: https://github.com/cookejm1/LockDoorsBattenHatchesGUI
+
 Challenges: Challenges for the team include: making the application layout and tools user friendly, 
 making the graphical user interface itself and integrating tools, adding images to swing applications while keeping the look, feel, and size we wanted.
 
 Installing and using LTDBTH:
-you can install the JAR directly from our release .
-alternitavely if you decide to download the source code you can launch it by running the launcher class.
+you can isntall LTDBTH by cloning the github repository to your local machine. To run you must have Java Development Kit: https://www.oracle.com/java/technologies/downloads/#jdk19-windows.
+as well as a Java Virtual Machine: https://www.java.com/en/download/.
+Navigate to your local repository in cmd on windows or terminal on mac and type javac \*.java, then type java Launcher. 
+

@@ -116,11 +116,11 @@ public class CCleaner extends javax.swing.JFrame {
         boolean winOS = Launcher.setOS();
     	if (winOS) 
     	{
-    		jLabel2.setIcon(new javax.swing.ImageIcon(".\\src\\com\\ltdbth\\gui\\images\\ccleaner.png"));
+    		jLabel2.setIcon(new javax.swing.ImageIcon(".\\images\\ccleaner.png"));
     	}
     	else
     	{
-    		jLabel2.setIcon(new javax.swing.ImageIcon("./src/com/ltdbth/gui/images/ccleaner.png"));
+    		jLabel2.setIcon(new javax.swing.ImageIcon("./images/ccleaner.png"));
     	} 
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

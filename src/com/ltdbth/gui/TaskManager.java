@@ -52,11 +52,11 @@ public class TaskManager extends javax.swing.JFrame {
         boolean winOS = Launcher.setOS();
     	if (winOS) 
     	{
-    		jLabel2.setIcon(new javax.swing.ImageIcon(".\\src\\com\\ltdbth\\gui\\images\\taskManager.png"));
+    		jLabel2.setIcon(new javax.swing.ImageIcon(".\\images\\taskManager.png"));
     	}
     	else
     	{
-    		jLabel2.setIcon(new javax.swing.ImageIcon("./src/com/ltdbth/gui/images/taskManager.png"));
+    		jLabel2.setIcon(new javax.swing.ImageIcon("./images/taskManager.png"));
     	} 
         
         backButton.setText("Go Back");

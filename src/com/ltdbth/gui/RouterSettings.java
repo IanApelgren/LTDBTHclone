@@ -84,11 +84,11 @@ public class RouterSettings extends javax.swing.JFrame {
         boolean winOS = Launcher.setOS();
     	if (winOS) 
     	{
-    		jLabel2.setIcon(new javax.swing.ImageIcon(".\\src\\com\\ltdbth\\gui\\images\\routerSettings.png"));
+    		jLabel2.setIcon(new javax.swing.ImageIcon(".\\images\\routerSettings.png"));
     	}
     	else
     	{
-    		jLabel2.setIcon(new javax.swing.ImageIcon("./src/com/ltdbth/gui/images/routerSettings.png"));
+    		jLabel2.setIcon(new javax.swing.ImageIcon("./images/routerSettings.png"));
     	} 
 
         launchButton.setText("Launch");

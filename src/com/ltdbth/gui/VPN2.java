@@ -60,8 +60,15 @@ public class VPN2 extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("./src/com/ltdbth/gui/images/vpn.png")); // NOI18N
-        jLabel2.setText("jLabel2");
+        boolean winOS = Launcher.setOS();
+        if (winOS) 
+        {
+            jLabel2.setIcon(new javax.swing.ImageIcon(".\\images\\vpn.png"));
+        }
+        else
+        {
+            jLabel2.setIcon(new javax.swing.ImageIcon("./images/vpn.png"));
+        } 
 
         backButton.setText("Go Back");
         backButton.addActionListener(new java.awt.event.ActionListener() {

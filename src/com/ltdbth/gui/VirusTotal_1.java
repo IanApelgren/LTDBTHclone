@@ -88,11 +88,11 @@ public class VirusTotal_1 extends javax.swing.JFrame {
         boolean winOS = Launcher.setOS();
     	if (winOS) 
     	{
-    		jLabel4.setIcon(new javax.swing.ImageIcon(".\\src\\com\\ltdbth\\gui\\images\\VirusTotal.png"));
+    		jLabel4.setIcon(new javax.swing.ImageIcon(".\\images\\VirusTotal.png"));
     	}
     	else
     	{
-    		jLabel4.setIcon(new javax.swing.ImageIcon("./src/com/ltdbth/gui/images/VirusTotal.png"));
+    		jLabel4.setIcon(new javax.swing.ImageIcon("./images/VirusTotal.png"));
     	} 
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

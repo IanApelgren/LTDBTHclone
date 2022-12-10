@@ -100,7 +100,7 @@ Please restart you machine after installing these.
    
 4) Navigate to the source files via:
 
-   cd ./LockTheDoorsBattenTheHatches/src/com/ltdbth/gui
+   cd ./LockTheDoorsBattenTheHatchesGUI/src/com/ltdbth/gui
  
 5) Once inside enter:
 

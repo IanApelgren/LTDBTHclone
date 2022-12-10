@@ -106,7 +106,7 @@ Please restart you machine after installing these.
 
    javac *.java
    
-   This shall compile all source files. Ignore the two warnings.
+   This will compile all source files. Ignore the two warnings.
    
 6) Enter:
 

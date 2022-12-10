@@ -109,4 +109,6 @@ Please restart you machine after installing these.
 
    java login
    
-   And the application will launch.   
+   And the application will launch.
+   
+Please refer to the "Demo and Installation guide linked above if any issues happen

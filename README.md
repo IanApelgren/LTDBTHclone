@@ -86,19 +86,27 @@ Please restart you machine after installing these.
 1) Create a new folder on your Desktop.
 
 2) Open the terminal/command prompt and navigate to the folder you just created:
+
    cd ./Desktop./*YOURFOLDERNAMEHERE*
 
 3) Once inside the directory enter:
+
    git clone https://github.com/cookejm1/LockDoorsBattenHatchesGUI
+   
    You will now have a copy of the source files.
    
 4) Navigate to the source files via:
+
    cd ./LockTheDoorsBattenTheHatches/src/com/ltdbth/gui
  
 5) Once inside enter:
+
    javac *.java
+   
    This shall compile all source files. Ignore the two warnings.
    
 6) Enter:
+
    java login
+   
    And the application will launch.   

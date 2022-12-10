@@ -60,7 +60,9 @@ Unique Tool Windows
  - Each Tool has its own unique window.
  - Implemented with Java Swing Library (JButton, JLabel, JTextField, JCheckBox, IconImage).
 
-*The single executable/.jar feature was discontinued as our implementation did not allow us to display the images on the window*
+*The single executable/.jar feature was discontinued as our implementation did not allow us to display the images on the window.*
+
+*Each feature can be confirmed via its associated weeks documentation and slides from the ASUlean page.*
 
 Links
 ----------

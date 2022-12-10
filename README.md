@@ -6,7 +6,7 @@ Ian Apelgren & James Cooke
 
 Project Type
 ----------
-Java swing application, incorporating linux/windows scripts, and external security applications. 
+Java Swing application incorporating linux/windows scripts and external security applications. 
 
 Project Domain
 ----------

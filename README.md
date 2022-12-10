@@ -78,13 +78,13 @@ making the graphical user interface itself and integrating tools, adding images 
 
 Installation
 ----------
-Before begin the installation process make sure to have a Java Development Kit and Virtual Machine installed.
+Before beginning the installation process make sure to have a Java Development Kit and Virtual Machine installed.
 
 Java Development Kit: https://www.oracle.com/java/technologies/downloads/#jdk19-windows
 
 Java Virtual Machine: https://www.java.com/en/download/
 
-Please restart you machine after installing these.
+Please restart your machine after installing these.
 
 1) Create a new folder on your Desktop.
 

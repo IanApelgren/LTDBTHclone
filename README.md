@@ -63,7 +63,7 @@ Unique Tool Windows
 
 *The single executable/.jar feature was discontinued as our implementation did not allow us to display the images on the window.*
 
-*Each feature can be confirmed via its associated weeks documentation/slides from the ASUlean page.*
+*Each other feature can be confirmed via its associated weeks documentation/slides from the ASUlean page.*
 
 *Below is a link to the files associated with each weeks standup/updates with Dr. Javidian. These can also be used as evidence for feature completion.*
 
